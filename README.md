@@ -15,3 +15,4 @@ This repository contains the code for replicating experiments in [TODO paper lin
 2) Include necessary scripts
 3) Include instructions / new scripts for the feature extraction phase
 4) Include description of what the feature etc. directories should look like
+  * What lists are required and how they are created (e.g. voxceleb training list)

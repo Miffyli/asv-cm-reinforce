@@ -13,7 +13,7 @@ do
   do
     mkdir -p bulk_scores/cm_${dataset}_${gender}
     python3 train_siamese_cm.py \
-        ASVSpoof2019_lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trl.txt \
+        lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trl.txt \
         features/cqcc/ASVspoof2019_LA_${dataset}/wav/ \
         none \
         bulk-eval \

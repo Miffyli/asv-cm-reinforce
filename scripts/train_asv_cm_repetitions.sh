@@ -34,7 +34,7 @@ cm_dropout=0.0
 for repetition in 1 2 3
 do
   python3 train_siamese_cm.py \
-    ASVSpoof2019_lists/ASVspoof2019.LA.cm.train.trn.txt \
+    lists/ASVspoof2019.LA.cm.train.trn.txt \
     features/cqcc/ASVspoof2019_LA_train/wav/ \
     bulk_models/cm_repetition_${repetition} \
     train \

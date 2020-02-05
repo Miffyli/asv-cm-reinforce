@@ -8,7 +8,7 @@ then
 fi
 
 python3 train_joint_rl.py \
-  ASVSpoof2019_lists/ASVspoof2019.LA.asv.dev.gi.trl.txt \
+  lists/ASVspoof2019.LA.asv.dev.gi.trl.txt \
   features/xvectors/ASVspoof2019_LA_dev/wav/ \
   features/cqcc/ASVspoof2019_LA_dev/wav/ \
   ${2} \
@@ -18,7 +18,7 @@ python3 train_joint_rl.py \
   ${@:4}
 
 # Do scoring (include snapshots and final model)
-./scripts/bulk_score_asv_on_asvspoof.sh bulk_models/${1}_updates_*_asv_model bulk_models/${1}_asv_model &
+./scripts/bulk_score_asv_on_asvspoof.sh bulk_models/${1}_updates_*_asv_model bulk_models/${1}_asv_model
 ./scripts/bulk_score_cm_on_asvspoof.sh bulk_models/${1}_updates_*_cm_model bulk_models/${1}_cm_model
 # And finally render the videos
 ./scripts/render_score_animations.sh ${1}

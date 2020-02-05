@@ -13,7 +13,7 @@ lr=0.0001
 optimizer="adam"
 
 python3 train_xvector_asv.py \
-  ASVSpoof2019_lists/ASVspoof2019.LA.cm.train.trn.txt \
+  lists/ASVspoof2019.LA.cm.train.trn.txt \
   features/xvectors/ASVspoof2019_LA_train/wav \
   ${1}_adapted_to_asvspoof \
   train \

@@ -13,11 +13,11 @@ do
   do
     mkdir -p bulk_scores/asv_${dataset}_${gender}
     python3 train_xvector_asv.py \
-        ASVSpoof2019_lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trn.txt \
+        lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trn.txt \
         features/xvectors/ASVspoof2019_LA_${dataset}/wav/ \
         none \
         bulk-eval \
-        --trial-list ASVSpoof2019_lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trl.txt \
+        --trial-list lists/ASVspoof2019.LA.asv.${dataset}.${gender}.trl.txt \
         --output bulk_scores/asv_${dataset}_${gender} \
         --models ${@:1}
   done
