@@ -11,6 +11,7 @@ This repository contains the code for replicating experiments in [TODO paper lin
 
 ## TODOs
 
-1) Include necessary python code and clean up
+1) Include necessary python code and clean up DONE
 2) Include necessary scripts
 3) Include instructions / new scripts for the feature extraction phase
+4) Include description of what the feature etc. directories should look like
