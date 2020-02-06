@@ -21,10 +21,7 @@ for repetition in 1 2 3
 do
   for dataset in "dev" "eval"
   do
-    cat bulk_scores/asv_${dataset}_male/asv_repetition_${repetition}.txt.asv_scores \
-        bulk_scores/asv_${dataset}_female/asv_repetition_${repetition}.txt.asv_scores \
-        > bulk_scores/asv_${dataset}/asv_repetition_${repetition}.txt.asv_scores
-
+    mkdir -p asv_${dataset} cm_${dataset}
     cat bulk_scores/asv_${dataset}_male/asv_repetition_${repetition}_adapted_to_asvspoof.txt.asv_scores \
         bulk_scores/asv_${dataset}_female/asv_repetition_${repetition}_adapted_to_asvspoof.txt.asv_scores \
         > bulk_scores/asv_${dataset}/asv_repetition_${repetition}_adapted_to_asvspoof.txt.asv_scores
