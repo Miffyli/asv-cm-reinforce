@@ -3,7 +3,7 @@
 Speaker verification and spoofing countermeasure systems are trained independent, but used together.
 What if we optimize them together for the tandem task?
 
-This repository contains the code for replicating experiments in [TODO paper link] 
+This repository contains the code for replicating experiments in [Waiting for link to paper]
 
 ## Requirements
 * PyTorch (experiments ran on v1.3.1)
