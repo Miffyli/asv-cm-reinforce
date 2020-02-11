@@ -5,6 +5,8 @@ What if we optimize them together for the tandem task?
 
 This repository contains the code for replicating experiments in "[An initial investigation on optimizing tandem speaker verification and countermeasure systems using reinforcement learning](https://arxiv.org/abs/2002.03801)"
 
+**Note:** If you experience trouble replicating the experiments, do not hesistate to contact us over Github Issues or via email! Especially the feature extraction side is not the most elegant setup, which will likely give you some headache.
+
 ## Requirements
 * PyTorch (experiments ran on v1.3.1)
 * [Kaldi](https://kaldi-asr.org/) and [PyKaldi](https://github.com/pykaldi/pykaldi) for extracting features
