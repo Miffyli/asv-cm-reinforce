@@ -7,6 +7,10 @@ This repository contains the code for replicating experiments in "[An initial in
 
 **Note:** If you experience trouble replicating the experiments, do not hesistate to contact us over Github Issues or via email! Especially the feature extraction side is not the most elegant setup, which will likely give you some headache.
 
+## Precomputed scores
+
+See `scores` for score-files used to compute the results in the paper.
+
 ## Requirements
 * PyTorch (experiments ran on v1.3.1)
 * [Kaldi](https://kaldi-asr.org/) and [PyKaldi](https://github.com/pykaldi/pykaldi) for extracting features
