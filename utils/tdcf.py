@@ -200,7 +200,7 @@ if __name__ == "__main__":
     frr_eer, far_eer, eer_threshold = compute_eer(frr, far, thresholds)
     eer = (frr_eer + far_eer) / 2
 
-    tDCF_norm, cm_thresholds = compute_asvspoof_worst_case_tDCF(
+    tDCF_norm, cm_thresholds = compute_asvspoof_tDCF(
         asv_target_scores,
         asv_nontarget_scores,
         cm_target_scores,
